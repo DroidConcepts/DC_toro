@@ -3,13 +3,13 @@
 
   <remote  name="aosp"
            fetch="https://android-review.googlesource.com/" />
-  <remote name="davros"
+  <remote name="droidconcepts"
            fetch="git://github.com/DroidConcepts/" />           
   <default revision="refs/tags/android-4.1.1_r3"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform_build_toro" remote="davros" revision="master">
+  <project path="build" name="platform_build_toro" remote="droidconcepts" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -34,7 +34,7 @@
   <project path="device/samsung/crespo" name="device/samsung/crespo" />
   <project path="device/samsung/crespo4g" name="device/samsung/crespo4g" />
   <project path="device/samsung/maguro" name="device/samsung/maguro" />
-  <project path="device/samsung/toro" name="platform_device_samsung_toro" remote="davros" revision="master" />
+  <project path="device/samsung/toro" name="platform_device_samsung_toro" remote="droidconcepts" revision="master" />
   <project path="device/samsung/torospr" name="device/samsung/torospr" />
   <project path="device/samsung/tuna" name="device/samsung/tuna" />
   <project path="device/ti/panda" name="device/ti/panda" />
@@ -184,7 +184,7 @@
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="davros" revision="master" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="droidconcepts" revision="master" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" />
@@ -245,7 +245,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="davros" revision="master" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="droidconcepts" revision="master" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
@@ -299,13 +299,13 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform_system_core" remote="davros" revision="master" />
+  <project path="system/core" name="platform_system_core" remote="droidconcepts" revision="master" />
   <project path="system/extras" name="platform/system/extras" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" />
   <project path="system/vold" name="platform/system/vold" />
-  <project path="vendor/Droid_Concepts" name="vendor_toro" remote="davros" revision="master" />
-  <project path="vendor/samsung" name="platform_vendor_samsung" remote="davros" revision="master" />
+  <project path="vendor/Droid_Concepts" name="vendor_toro" remote="droidconcepts" revision="master" />
+  <project path="vendor/samsung" name="platform_vendor_samsung" remote="droidconcepts" revision="master" />
 
 </manifest>
